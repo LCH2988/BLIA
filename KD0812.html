@@ -43,7 +43,7 @@ width="100%" height="100%" scrolling="auto">
         if (rows.length > 1) {
           const cells = rows[1].split(',');
           if (cells.length >= 4) {
-            const url = cells[4].trim(); // D3 單元格是第四個單元格（索引為 3）
+            const url = cells[3].trim(); // D3 單元格是第四個單元格（索引為 3）
             document.getElementById('dynamic-iframe').src = url;
           } else {
             console.error('D3 單元格不存在');
